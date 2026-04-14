@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "minimax/minimax-m2.7",
+  "mcp": {
+    "obsidian": {
+      "type": "local",
+      "command": [
+        "node",
+        "/home/dev-frontend/sideprojects/agent-assistent/mcp-server/build/index.js"
+      ],
+      "environment": {
+        "VAULT_PATH": "/home/dev-frontend/Documentos/obsidian"
+      },
+      "enabled": true
+    }
+  },
+  "skills": {
+    "paths": [
+      "./skills"
+    ]
+  }
+}

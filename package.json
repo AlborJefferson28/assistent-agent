@@ -1,0 +1,26 @@
+{
+  "name": "obsidian-assistant-root",
+  "private": true,
+  "workspaces": [
+    "mcp-server",
+    "telegram-bot"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "build:mcp": "npm run build -w mcp-server",
+    "build:bot": "npm run build -w telegram-bot",
+    "build": "npm run build:mcp && npm run build:bot",
+    "start:mcp": "npm run start -w mcp-server",
+    "start:bot": "npm run start -w telegram-bot"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "@opencode-ai/sdk": "^1.4.3",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^6.0.2"
+  }
+}
