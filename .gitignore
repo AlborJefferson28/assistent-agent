@@ -8,6 +8,8 @@ coverage/
 
 # Production
 build/
+!mcp-server/build/
+!telegram-bot/build/
 dist/
 
 # Misc
