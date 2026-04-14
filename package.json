@@ -11,7 +11,8 @@
     "build:bot": "npm run build -w telegram-bot",
     "build": "npm run build:mcp && npm run build:bot",
     "start:mcp": "npm run start -w mcp-server",
-    "start:bot": "npm run start -w telegram-bot"
+    "start:bot": "npm run start -w telegram-bot",
+    "start:agent": "./start-agent.sh"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.1",
