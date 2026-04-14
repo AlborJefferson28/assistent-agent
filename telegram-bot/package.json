@@ -1,0 +1,21 @@
+{
+  "name": "obsidian-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot proxy for OpenCode Obsidian agent",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@opencode-ai/sdk": "^1.4.3",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^6.0.2"
+  }
+}
